@@ -1,0 +1,1 @@
+{"id":"42d81b6a-35f1-4b54-a280-b1d9a2e6f63e","space":20987,"runtime":"python3.9","name":"backend","path":"2q6e55","project":"a03mg9op","account":"144798365827","region":"eu-central-1","deps":["fastapi==0.78.0","python-dotenv"],"envs":["health_deta_project_key","health_deta_project_id"],"public":true,"log_level":"debug","cron":""}
