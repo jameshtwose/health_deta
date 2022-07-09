@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Health Data</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1>Attempting to get health data</h1>
-    <div id="health"></div>
-    <script src="tmp.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <title>Health Data</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="section">
+    <h1>Requesting Data From <a href="https://2q6e55.deta.dev/all">Deta Micro</a>
+      Backend</h1>
+
+    <div id="container">
+      <div id="date"></div>
+      <div id="bpm"></div>
+      <div id="confidence"></div>
+    </div>
+
+    <!-- <div><canvas id="myChart"></canvas></div> -->
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</body>
+
 </html>
