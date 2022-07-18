@@ -45,3 +45,5 @@ _ = sns.relplot(data=plot_df, x="date", y="value", hue="variable",
                 row="variable", facet_kws={"sharey":False},
                 kind="line", aspect=2.5)
 # %%
+df.head(2).to_json(orient="records")
+# %%

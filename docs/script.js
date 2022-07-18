@@ -2,6 +2,7 @@
 
 // api url
 const api_url = "https://2q6e55.deta.dev/all";
+// const api_url = "http://127.0.0.1:8000/all";
 const options = {
   method: 'GET',
   mode: "cors",
@@ -93,7 +94,14 @@ function displayPlot(data) {
   const config = {
     type: 'line',
     data: heartData,
-    options: {}
+    options: {scales: {
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Average Beats Per Minute'
+        }
+      }]
+    }     }
   };
   
   const myChart = new Chart(
@@ -102,36 +110,3 @@ function displayPlot(data) {
   );
 }
 
-const labels = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-];
-
-// let heartData
-// let labels = data.map(({ key }) => key);
-
-const data = {
-  labels: labels,
-  datasets: [{
-    label: 'Heart Rate Data',
-    backgroundColor: 'rgb(0, 145, 255, 0.459)',
-    borderColor: 'rgb(0, 145, 255)',
-    data: [0, 10, 5, 2, 20, 30, 45],
-    tension: 0.5,
-  }]
-};
-
-const config = {
-  type: 'line',
-  data: data,
-  options: {}
-};
-
-const myChart = new Chart(
-  document.getElementById('myChart'),
-  config
-);
