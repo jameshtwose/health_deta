@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from deta import Deta
-# from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv, find_dotenv
 import pandas as pd
 import os
 from fastapi.middleware.cors import CORSMiddleware
 #%%
-# load_dotenv(find_dotenv())
+load_dotenv(find_dotenv())
 
 #%%
 # initialize with a project key
